@@ -1,0 +1,4 @@
+suites:
+    main:
+        namespace: Cve\Naming
+        psr4_prefix: Cve\Naming

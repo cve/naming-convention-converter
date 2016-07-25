@@ -1,0 +1,46 @@
+{
+    "name": "cve/naming-convention-converter",
+    "type": "library",
+    "description": "This little package includes string utils which for example can convert underscore_string to camelCased and vice-versa",
+    "keywords": [
+        "cve",
+        "naming-convention-converter",
+        "string",
+        "utils"
+    ],
+    "homepage": "https://github.com/cve/naming-convention-converter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karol Fiturski",
+            "email": "iksrutiflorak@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~5.3|~7.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "~2.3",
+        "phpspec/phpspec": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cve\\Naming\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cve\\Naming\\": "spec"
+        }
+    },
+    "scripts": {
+        "test": "phpspec run",
+        "format": "phpcbf --standard=psr2 src/"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
